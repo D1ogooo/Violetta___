@@ -12,7 +12,7 @@ export default function Register() {
   const [confirmPassword, setConfirmPassword] = useState("");
   
   function registerSubmit () {
-    axios.post('https://back-end-production-5622.up.railway.app/user/v1', {
+    axios.post('', {
      "email": `${email}`,
      "password": `${password}`,
      "passwordConfirmation": `${confirmPassword}`,
