@@ -7,7 +7,7 @@ export default function FormLogin() {
   const [password, setPassword] = useState("");
   
   function LoginSubmit () {
-    axios.post('https://back-end-production-5622.up.railway.app/v1/user/v1/login', {
+    axios.post('', {
      "email": `${email}`,
      "password": `${password}`,
     })
