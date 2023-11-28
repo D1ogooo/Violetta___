@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     element: <PostsUsuario />, // vai ficar assim por enquanto
   },
   {
-    path: '/meusLikes', // Adicionando uma rota para MeusLikes
+    path: '/meusLikes',
     element: <MeusLikes />,
   },
 ]);
