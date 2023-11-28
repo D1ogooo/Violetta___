@@ -1,8 +1,26 @@
-import { ButtoVerPostagens, CardContent, InternalCard, PaiContainer, SecondLinks, TitleNullContent } from './MeusLikesStyle';
+import React from 'react';
+import {
+  ButtoVerPostagens,
+  CardContent,
+  InternalCard,
+  PaiContainer,
+  SecondLinks,
+  TitleNullContent
+} from './MeusLikesStyle';
 import { Logo } from '../../Home/PrimeiraParte/HomeStyle';
-import { LeftContainer, RightContainer, FullContent, NullContent, TitleCard, ParagraphCard } from './MeusLikesStyle';
-import { Line } from '../MinhasPostagens/PostsStyle';
-import { Container, Header, Links, UsuarioPerfil } from '../MinhasPostagens/PostsStyle';
+import {
+  LeftContainer,
+  RightContainer,
+  FullContent,
+  NullContent,
+  TitleCard,
+  ParagraphCard,
+  Line,
+  Container,
+  Header,
+  Links,
+  UsuarioPerfil
+} from '../MinhasPostagens/PostsStyle';
 import { CardLikes } from './Data/MeusLikesData';
 
 import Logo_Link_Perfil from '../MinhasPostagens/assets/profile 1.svg';
