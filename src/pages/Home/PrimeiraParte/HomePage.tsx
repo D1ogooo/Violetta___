@@ -3,8 +3,6 @@ import HomeTerceira from '../TerceiraParte/HomeTerceiraParte'
 import { PaiContainer, LeftContainer, Title, ButtonComecar, RightContainer, Container, Logo } from './HomeStyle'
 import { PrimeiraColuna, SegundaColuna } from './HomeStyle'
 import LogoImage from '../../../assets/ghost 1.svg'
-import FirstImage from '../../../assets/Images/DreamShaper_v7_anime_girl_with_a_hoddie_smiling_with_eyes_clos_1 (1).jpg'
-import SecondImage from '../../../assets/Images/DreamShaper_v7_anime_girl_with_a_hoddie_smiling_with_eyes_clos_0.jpg'
 
 function Home() {
     return (
