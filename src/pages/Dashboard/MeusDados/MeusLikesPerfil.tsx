@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   ButtoVerPostagens,
   CardContent,
@@ -52,7 +53,6 @@ function MeusLikes() {
         </UsuarioPerfil>
       </Header>
 
-      <Container>
       <main>
         <PaiContainer>
           <LeftContainer>
@@ -81,7 +81,6 @@ function MeusLikes() {
                       <TitleCard>{card.title}</TitleCard>
                       <ParagraphCard>{card.paragraph}</ParagraphCard>
                       <img src={card.icon_like} alt="Ícone de curtida" />
-                      
                     </InternalCard>
                   </CardContent>
                 </FullContent>
