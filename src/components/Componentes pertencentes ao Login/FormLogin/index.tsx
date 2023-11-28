@@ -15,11 +15,7 @@ export default function FormLogin() {
    })
 
    .then((res) => {
-    if(res.data.status == 200 ) {
-     navigate('/dashboard')
-    }else {
-     null
-    }
+    navigate('/dashboard')
    })
 
    .catch(function (error) {
