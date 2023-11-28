@@ -9,14 +9,14 @@ import {
 } from './MeusLikesStyle';
 import { Logo } from '../../Home/PrimeiraParte/HomeStyle';
 import {
-  LeftContainer,
-  RightContainer,
-  FullContent,
-  NullContent,
-  TitleCard,
-  ParagraphCard,
+  LeftContainer as OriginalLeftContainer,
+  RightContainer as OriginalRightContainer,
+  FullContent as OriginalFullContent,
+  NullContent as OriginalNullContent,
+  TitleCard as OriginalTitleCard,
+  ParagraphCard as OriginalParagraphCard,
   Line,
-  Container,
+  Container as OriginalContainer,
   Header,
   Links,
   UsuarioPerfil
@@ -30,7 +30,7 @@ import LineImage from '../MinhasPostagens/assets/Line 4.svg';
 
 function MeusLikes() {
   return (
-    <Container>
+    <OriginalContainer>
       <Header>
         <Logo>
           <img src={LogoImage} alt="Logo" />
@@ -55,7 +55,7 @@ function MeusLikes() {
 
       <main>
         <PaiContainer>
-          <LeftContainer>
+          <OriginalLeftContainer>
             <ul>
               <li>
                 <SecondLinks to="#">Editar Dados</SecondLinks>
@@ -70,23 +70,23 @@ function MeusLikes() {
                 <SecondLinks to="#">Logout</SecondLinks>
               </li>
             </ul>
-          </LeftContainer>
+          </OriginalLeftContainer>
 
-          <RightContainer>
+          <OriginalRightContainer>
             {CardLikes.length > 0 ? (
               CardLikes.map((card, index) => (
-                <FullContent key={index}>
+                <OriginalFullContent key={index}>
                   <CardContent>
                     <InternalCard>
-                      <TitleCard>{card.title}</TitleCard>
-                      <ParagraphCard>{card.paragraph}</ParagraphCard>
+                      <OriginalTitleCard>{card.title}</OriginalTitleCard>
+                      <OriginalParagraphCard>{card.paragraph}</OriginalParagraphCard>
                       <img src={card.icon_like} alt="Ícone de curtida" />
                     </InternalCard>
                   </CardContent>
-                </FullContent>
+                </OriginalFullContent>
               ))
             ) : (
-              <NullContent>
+              <OriginalNullContent>
                 <img src={IdeiaImage} alt="Ícone de ideia" />
                 <TitleNullContent>
                   Você ainda não curtiu nenhuma postagem...
@@ -94,12 +94,12 @@ function MeusLikes() {
                 <ButtoVerPostagens to="#">
                   Ver postagens
                 </ButtoVerPostagens>
-              </NullContent>
+              </OriginalNullContent>
             )}
-          </RightContainer>
+          </OriginalRightContainer>
         </PaiContainer>
       </main>
-    </Container>
+    </OriginalContainer>
   );
 }
 
