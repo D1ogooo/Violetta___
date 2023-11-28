@@ -21,7 +21,7 @@ export default function Register() {
     })
 
     .then((res) => {
-      navigate('/authToken')
+      res.data.status === 200 && navigate('/authToken') :  
     })
 
     .catch(function (error) {
