@@ -34,55 +34,74 @@ function MeusLikes() {
       <Container>
         <Header>
           <Logo>
-            <img src={LogoImage} />
+            <img src={LogoImage} alt="Logo" />
           </Logo>
 
           <ul>
-            <li><Links to="#">Minhas Postagens</Links></li>
+            <li>
+              <Links to="#">Minhas Postagens</Links>
+            </li>
             <Line>
-              <img src={LineImage} />
+              <img src={LineImage} alt="Line" />
             </Line>
-            <li><Links to="#">Outras Postagens</Links></li>
+            <li>
+              <Links to="#">Outras Postagens</Links>
+            </li>
           </ul>
 
-          <UsuarioPerfil to="#"><img src={Logo_Link_Perfil} /></UsuarioPerfil>
+          <UsuarioPerfil to="#">
+            <img src={Logo_Link_Perfil} alt="Logo do Perfil" />
+          </UsuarioPerfil>
         </Header>
 
         <main>
           <PaiContainer>
             <LeftContainer>
               <ul>
-                <li><SecondLinks to="#">Editar Dados</SecondLinks></li>
-                <li><SecondLinks to="#">Meus Likes</SecondLinks></li>
-                <li><SecondLinks to="#">Meus Comentários</SecondLinks></li>
-                <li><SecondLinks to="#">Logout</SecondLinks></li>
+                <li>
+                  <SecondLinks to="#">Editar Dados</SecondLinks>
+                </li>
+                <li>
+                  <SecondLinks to="#">Meus Likes</SecondLinks>
+                </li>
+                <li>
+                  <SecondLinks to="#">Meus Comentários</SecondLinks>
+                </li>
+                <li>
+                  <SecondLinks to="#">Logout</SecondLinks>
+                </li>
               </ul>
             </LeftContainer>
-            
+
             <RightContainer>
-             {CardLikes.length > 0 ? (
-        CardLikes.map((card, index) => (
-          <FullContent key={index}>
-            <CardContent>
-              <InternalCard>
-                <TitleCard>{card.title}</TitleCard>
-                <ParagraphCard>{card.paragraph}</ParagraphCard>
-                <img src={card.icon_like} alt="Ícone de curtida" />
-                {/* Se ButtonLike deve ser utilizado, adicione-o aqui */}
-              </InternalCard>
-            </CardContent>
-          </FullContent>
-        ))) : (
-          <NullContent>
-            <img src={IdeiaImage} alt="Ícone de ideia" />
-            <TitleNullContent>
-              Você ainda não curtiu nenhuma postagem...
-            </TitleNullContent>
-            <ButtoVerPostagens to="#">
-              Ver postagens
-            </ButtoVerPostagens>
-          </NullContent>
-        )}
+              {CardLikes.length > 0 ? (
+                CardLikes.map((card, index) => (
+                  <FullContent key={index}>
+                    <CardContent>
+                      <InternalCard>
+                        <TitleCard>{card.title}</TitleCard>
+                        <ParagraphCard>{card.paragraph}</ParagraphCard>
+                        <img src={card.icon_like} alt="Ícone de curtida" />
+                        {/* Se ButtonLike deve ser utilizado, adicione-o aqui */}
+                      </InternalCard>
+                    </CardContent>
+                  </FullContent>
+                ))
+              ) : (
+                <NullContent>
+                  <img src={IdeiaImage} alt="Ícone de ideia" />
+                  <TitleNullContent>
+                    Você ainda não curtiu nenhuma postagem...
+                  </TitleNullContent>
+                  <ButtoVerPostagens to="#">
+                    Ver postagens
+                  </ButtoVerPostagens>
+                </NullContent>
+              )}
+            </RightContainer>
+          </PaiContainer>
+        </main>
+      </Container>
     </>
   );
 }
