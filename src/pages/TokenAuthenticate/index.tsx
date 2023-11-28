@@ -13,13 +13,13 @@ function TokenAuthenticate() {
     setinputValue(event.target.value);
   }
 
-  const Token: React.MouseEventHandler<HTMLButtonElement> = async (event) => {
+   const Token: React.MouseEventHandler<HTMLButtonElement> = async (event) => {
     event.preventDefault();
     const token = inputValue;
   
     try {
-      const res = await axios.post(`(url)/user/active/${token}`)
-      navigate('/dashboard');
+      const res = await axios.post(`https://back-end-production-5622.up.railway.app/user/active/{token}`);
+        navigate('/dashboard');
     } catch (error) {
       console.log(error);
     }
