@@ -19,11 +19,7 @@ function TokenAuthenticate() {
   
     try {
       const res = await axios.post(`(url)/user/active/${token}`)
-      if (res.data.status === 200) {
-        navigate('/dashboard');
-      } else {
-        null
-      }
+      navigate('/dashboard');
     } catch (error) {
       console.log(error);
     }
