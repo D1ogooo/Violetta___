@@ -1,4 +1,4 @@
-import { ButtoVerPostagens, ButtonLike, CardContent, InternalCard, PaiContainer, SecondLinks, TitleNullContent } from './MeusLikesStyle';
+import { ButtoVerPostagens, CardContent, InternalCard, PaiContainer, SecondLinks, TitleNullContent } from './MeusLikesStyle';
 import { Logo } from '../../Home/PrimeiraParte/HomeStyle';
 import { LeftContainer, RightContainer, FullContent, NullContent, TitleCard, ParagraphCard } from './MeusLikesStyle';
 import { Line } from '../MinhasPostagens/PostsStyle';
@@ -50,7 +50,7 @@ function MeusLikes() {
                 <TitleCard>{card.title}</TitleCard>
                 <ParagraphCard>{card.paragraph}</ParagraphCard>
                 <img src={card.icon_like} alt="Ícone de curtida" />
-                <ButtonLike to="#">{/* Adicione a funcionalidade desejada aqui */}</ButtonLike>
+                {/* Se ButtonLike deve ser utilizado, adicione-o aqui */}
               </InternalCard>
             </CardContent>
           </FullContent>
