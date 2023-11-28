@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   ButtoVerPostagens,
   CardContent,
@@ -30,79 +29,77 @@ import LineImage from '../MinhasPostagens/assets/Line 4.svg';
 
 function MeusLikes() {
   return (
-    <>
-      <Container>
-        <Header>
-          <Logo>
-            <img src={LogoImage} alt="Logo" />
-          </Logo>
+    <Container>
+      <Header>
+        <Logo>
+          <img src={LogoImage} alt="Logo" />
+        </Logo>
 
-          <ul>
-            <li>
-              <Links to="#">Minhas Postagens</Links>
-            </li>
-            <Line>
-              <img src={LineImage} alt="Line" />
-            </Line>
-            <li>
-              <Links to="#">Outras Postagens</Links>
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <Links to="#">Minhas Postagens</Links>
+          </li>
+          <Line>
+            <img src={LineImage} alt="Line" />
+          </Line>
+          <li>
+            <Links to="#">Outras Postagens</Links>
+          </li>
+        </ul>
 
-          <UsuarioPerfil to="#">
-            <img src={Logo_Link_Perfil} alt="Logo do Perfil" />
-          </UsuarioPerfil>
-        </Header>
+        <UsuarioPerfil to="#">
+          <img src={Logo_Link_Perfil} alt="Logo do Perfil" />
+        </UsuarioPerfil>
+      </Header>
 
-        <main>
-          <PaiContainer>
-            <LeftContainer>
-              <ul>
-                <li>
-                  <SecondLinks to="#">Editar Dados</SecondLinks>
-                </li>
-                <li>
-                  <SecondLinks to="#">Meus Likes</SecondLinks>
-                </li>
-                <li>
-                  <SecondLinks to="#">Meus Comentários</SecondLinks>
-                </li>
-                <li>
-                  <SecondLinks to="#">Logout</SecondLinks>
-                </li>
-              </ul>
-            </LeftContainer>
+      <main>
+        <PaiContainer>
+          <LeftContainer>
+            <ul>
+              <li>
+                <SecondLinks to="#">Editar Dados</SecondLinks>
+              </li>
+              <li>
+                <SecondLinks to="#">Meus Likes</SecondLinks>
+              </li>
+              <li>
+                <SecondLinks to="#">Meus Comentários</SecondLinks>
+              </li>
+              <li>
+                <SecondLinks to="#">Logout</SecondLinks>
+              </li>
+            </ul>
+          </LeftContainer>
 
-            <RightContainer>
-              {CardLikes.length > 0 ? (
-                CardLikes.map((card, index) => (
-                  <FullContent key={index}>
-                    <CardContent>
-                      <InternalCard>
-                        <TitleCard>{card.title}</TitleCard>
-                        <ParagraphCard>{card.paragraph}</ParagraphCard>
-                        <img src={card.icon_like} alt="Ícone de curtida" />
-                        
-                      </InternalCard>
-                    </CardContent>
-                  </FullContent>
-                ))
-              ) : (
-                <NullContent>
-                  <img src={IdeiaImage} alt="Ícone de ideia" />
-                  <TitleNullContent>
-                    Você ainda não curtiu nenhuma postagem...
-                  </TitleNullContent>
-                  <ButtoVerPostagens to="#">
-                    Ver postagens
-                  </ButtoVerPostagens>
-                </NullContent>
-              )}
-            </RightContainer>
-          </PaiContainer>
-        </main>
-      </Container>
-    </>
+          <RightContainer>
+            {CardLikes.length > 0 ? (
+              CardLikes.map((card, index) => (
+                <FullContent key={index}>
+                  <CardContent>
+                    <InternalCard>
+                      <TitleCard>{card.title}</TitleCard>
+                      <ParagraphCard>{card.paragraph}</ParagraphCard>
+                      <img src={card.icon_like} alt="Ícone de curtida" />
+                      
+                    </InternalCard>
+                  </CardContent>
+                </FullContent>
+              ))
+            ) : (
+              <NullContent>
+                <img src={IdeiaImage} alt="Ícone de ideia" />
+                <TitleNullContent>
+                  Você ainda não curtiu nenhuma postagem...
+                </TitleNullContent>
+                <ButtoVerPostagens to="#">
+                  Ver postagens
+                </ButtoVerPostagens>
+              </NullContent>
+            )}
+          </RightContainer>
+        </PaiContainer>
+      </main>
+    </Container>
   );
 }
 
