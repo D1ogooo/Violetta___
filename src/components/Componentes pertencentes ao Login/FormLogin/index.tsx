@@ -8,20 +8,19 @@ export default function FormLogin() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate()
   
-  async function LoginSubmit () {
-   const promisse = await axios.post('https://back-end-production-5622.up.railway.app/user/auth', {
-    "email": `${email}`,
-    "password": `${password}`,
-   })
+ async function LoginSubmit() {
+  try {
+    const response = await axios.post('https://back-end-production-5622.up.railway.app/user/auth', {
+      email,
+      password,
+    });
 
-   .then((res) => {
-     navigate('/dashboard')
-   })
-     
-   .catch(function (error) {
-    console.log(error);
-   });
+    navigate('/dashboard');
+  } catch (error) {
+    console.error(error);
   }
+}
+
 
   function HandleEmail(event: React.ChangeEvent<HTMLInputElement>) {
    setEmail(event.target.value);
