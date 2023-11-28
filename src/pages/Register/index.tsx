@@ -14,7 +14,7 @@ export default function Register() {
   const navigate = useNavigate();
   
   function registerSubmit () {
-    axios.post('', {
+    axios.post('(link)/user', {
      "email": `${email}`,
      "password": `${password}`,
      "passwordConfirmation": `${confirmPassword}`,
