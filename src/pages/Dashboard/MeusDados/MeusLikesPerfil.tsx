@@ -15,7 +15,6 @@ import {
   TitleCard,
   ParagraphCard,
   Line,
-  Container,
   Header,
   Links,
   UsuarioPerfil
@@ -29,7 +28,6 @@ import LineImage from '../MinhasPostagens/assets/Line 4.svg';
 
 function MeusLikes() {
   return (
-    <Container>
       <Header>
         <Logo>
           <img src={LogoImage} alt="Logo" />
@@ -98,7 +96,6 @@ function MeusLikes() {
           </RightContainer>
         </PaiContainer>
       </main>
-    </Container>
   );
 }
 
