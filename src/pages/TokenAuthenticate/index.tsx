@@ -18,8 +18,8 @@ function TokenAuthenticate() {
   
     try {
       let token = inputValue;
-      const res = await axios.post(`https://back-end-production-5622.up.railway.app/user/active/{token}`);
-        navigate('/dashboard');
+      await axios.post(`https://back-end-production-5622.up.railway.app/user/active/${token}`);
+      navigate('/dashboard');
     } catch (error) {
       console.log(error);
     }
