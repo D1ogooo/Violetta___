@@ -6,7 +6,6 @@ import * as S from "./styled";
 export default function FormLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const navigate = useNavigate()
   
   async function LoginSubmit () {
