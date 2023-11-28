@@ -25,10 +25,6 @@ function TokenAuthenticate() {
     }
   };
 
-  function resTeste() {
-    navigate('/')
-  }
-
   return (
     <>
       <Container>
@@ -41,7 +37,7 @@ function TokenAuthenticate() {
             <h1>Insira o seu token de autenticação</h1>
             <form>
              <input type="text" id="text" placeholder='Seu token de verificação' onChange={HandleInput} />
-             <ButtonSubmit type="submit" disabled={inputValue.length < 1} onClick={resTeste}>
+             <ButtonSubmit type="submit" disabled={inputValue.length < 1} onClick={Token}>
               Verificar
              </ButtonSubmit>
             </form>
