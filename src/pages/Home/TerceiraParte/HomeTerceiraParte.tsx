@@ -11,7 +11,6 @@ import SecondImage from '../../../assets/Images/DreamShaper_v7_ANIME_STYLE_frien
 function HomeTerceira() {
     return (
         <>
-            <Container>
                 <PaiContainer>
                     <LeftContainer>
                         <Title>SE IDENTIFIQUE <br />
@@ -22,21 +21,17 @@ function HomeTerceira() {
                     </LeftContainer>
                     <RightContainer>
                         <PrimeiraColuna>
-                            <img src={FirstImage}/>
                         </PrimeiraColuna>
                         <PrimeiroCoracao>
-                            <img src={CoracaoImage} />
+                         <img src={CoracaoImage} />
                         </PrimeiroCoracao>
                         <SegundaColuna>
-                            <img src={SecondImage} />
                         </SegundaColuna>
                         <SegundoCoracao>
-                            <img src={SegundoCoracaoImage} />
+                         <img src={SegundoCoracaoImage} />
                         </SegundoCoracao>
                     </RightContainer>
                 </PaiContainer>
-
-            </Container>
             <Footer />
         </>
     )

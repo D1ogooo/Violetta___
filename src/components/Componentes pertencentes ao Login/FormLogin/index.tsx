@@ -1,36 +1,42 @@
 import { useState } from "react";
-import axios from "axios";
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 import * as S from "./styled";
 
 export default function FormLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
-  function LoginSubmit () {
-    axios.post('https://back-end-production-5622.up.railway.app/v1/user/v1/login', {
-     "email": `${email}`,
-     "password": `${password}`,
-    })
+  const navigate = useNavigate()
 
-    .then(function (response) {
-     console.log(response);
-    })
+  async function LoginSubmit () {
+   axios.post('https://back-end-production-5622.up.railway.app/user/auth', {
+    "email": `${email}`,
+    "password": `${password}`,
+   })
 
-    .catch(function (error) {
-     console.log(error);
-    });
+   .then((res) => {
+    if(res.data.status == 200 ) {
+     navigate('/dashboard')
+    }else {
+     null
+    }
+   })
+
+   .catch(function (error) {
+    console.log(error);
+   });
   }
 
   function HandleEmail(event: React.ChangeEvent<HTMLInputElement>) {
-    setEmail(event.target.value);
+   setEmail(event.target.value);
   }
 
   function HandlePassword(event: React.ChangeEvent<HTMLInputElement>) {
-    setPassword(event.target.value);
+   setPassword(event.target.value);
   }
 
   function HandleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+   event.preventDefault();
   }
 
   return (

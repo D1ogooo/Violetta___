@@ -26,12 +26,10 @@ function Home() {
                         <SegundaColuna>
                         </SegundaColuna>
                     </RightContainer>
+                    <HomeSegunda />
+                   {/* <HomeTerceira /> */}
                 </PaiContainer>
             </Container>
-
-            {/* <HomeSegunda />
-
-            <HomeTerceira /> */}
         </>
     )
 }

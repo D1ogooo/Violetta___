@@ -2,14 +2,10 @@ import styled from "styled-components";
 
 export const PaiContainer = styled.div`
  display: flex;
- gap: 6%;
-`
-
-export const Container = styled.div`
- margin: 0 auto;
- width: 90%;
- margin-top: 18rem;
- margin-bottom: 17.4375rem;
+ margin-top: 18.625rem;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ gap: .9rem;
 `
 
 export const Title = styled.h1`

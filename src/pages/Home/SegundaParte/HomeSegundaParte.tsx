@@ -1,4 +1,4 @@
-import { PaiContainer, Container, LeftContainer, RightContainer, Title } from './HomeStyle'
+import { PaiContainer, LeftContainer, RightContainer, Title } from './HomeStyle'
 import { PrimeiraColuna, SegundaColuna, CadeadoImg, RetangleImg } from './HomeStyle'
 import CadeadoImage from './assets/cadeado.svg'
 import RetangleImage from './assets/Rectangle com borda branca que não estou com disposição para quebrar a cabeça para fazer porque estou nervososvg.svg'
@@ -9,7 +9,7 @@ import SecondImage from '../../../assets/Images/DreamShaper_v7_anime_girl_with_a
 export default function HomeSegunda() {
     return (
         <>
-            <Container>
+         
                 <PaiContainer>
                     <LeftContainer>
                         <PrimeiraColuna/>
@@ -22,12 +22,12 @@ export default function HomeSegunda() {
                         </RetangleImg>
                     </LeftContainer>
                     <RightContainer>
-                        <Title>COMPLETAMENTE SEGURO E ANÔNIMO</Title>
+                        <Title>COMPLETAMENTE <br></br>SEGURO E ANÔNIMO</Title>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
                     </RightContainer>
                 </PaiContainer>
-            </Container>
+            
         </>
     )
 }

@@ -10,14 +10,18 @@ export const SubmitButton = styled.button<ButtonProps>`
   background-color: ${(props: any) => (props.disabled === true ? "#a79246" : "#c2a53c")};
   text-decoration: none;
   color: #000;
-  font-family: Esteban;
+  font-family: 'Esteban';
   font-size: 20px;
   border-radius: 50px;
   text-align: center;
-  padding-left: 66px;
-  padding-right: 66px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+ @media (max-width: 35.5rem){
+  font-size: 1rem;
+ }
 `;
 
 export const ContainerPai = styled.div`
@@ -33,65 +37,73 @@ export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
+
+ @media (max-width: 35.5rem){
+  input {
+   width: 18rem;
+  }
+ }
 `;
 
 export const Titulo = styled.p`
-  margin-bottom: 23px;
+  margin-bottom: 1.4375rem;
   color: #fff;
   text-align: center;
   font-family: Esteban;
-  font-size: 74px;
+  font-size: 4.625rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400;BqcZIXQazmiuauvFVKvPbqZipbBMNZwGiuWpLFwFfRcgTgMXtfLQDgDLnNqDQQmJ
   line-height: normal;
-  letter-spacing: 6.29px;
-  `;
+  letter-spacing: 0.3931rem;
+
+ @media (max-width: 35.5rem){
+  font-size: 2.625rem;
+ }
+`;
 
 export const Input = styled.input`
-  width: 433px;
-  height: 59px;
-  padding: 17px 23px;
+  width: 27.0625rem;
+  height: 3.6875rem;
+  padding: 1.0625rem 1.4375rem;
   flex-shrink: 0;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   background-color: #404040;
   box-sizing: border-box;
   color: #fff;
   font-family: Esteban;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.1062rem;
   border: none;
 
   &::placeholder {
     color: #fff;
     font-family: Esteban;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.7px;
+    letter-spacing: 0.1062rem;
     opacity: 0.35;
   }
-  `;
-
+`;
 
 export const LinkTo = styled(Link)`
   color: #fff;
   text-align: center;
-  font-family: Esteban;
-  font-size: 20px;
+  font-family: 'Esteban';
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.1062rem;
   text-decoration-line: underline;
-  margin-top: 23px;
+  margin-top: 1.4375rem;
   `;
 
-// Tentativa de informações do register
 export const Notification_register = styled.div`
 @keyframes FadeIn {
 5% {
@@ -106,13 +118,13 @@ export const Notification_register = styled.div`
 }
 
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 18px;
-margin: 10px;
+font-size: 1.125rem;
+margin: 0.625rem;
 position: absolute;
 top: 0;
 right: 0;
 width: max-content;
-border-radius: 6px;
+border-radius: 0.375rem;
 background-color: #404040;
 color: #bebdbdc5;
 `
@@ -121,11 +133,11 @@ export const Notification__body_register = styled.div`
  display: flex;
  flex-direction: row;
  align-items: center;
- padding: 16px 8px;
+ padding: 1rem 0.5rem;
 
  svg {
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   color: #c52525;
  }
 `
@@ -138,10 +150,10 @@ export const Notification__progress_register = styled.div`
  }
 
  position: absolute;
- left: 4px;
- bottom: 4px;
- width: calc(100% - 8px);
- height: 3px;
+ left: 0.25rem;
+ bottom: 0.25rem;
+ width: calc(100% - 0.5rem);
+ height: 0.1875rem;
  transform: scaleX(0);
  transform-origin: left;
  background: linear-gradient(to right, #6d3fa2, #9f13ea);

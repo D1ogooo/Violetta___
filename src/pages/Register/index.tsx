@@ -1,5 +1,6 @@
 import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom'
 import Footer from "../../components/Componentes pertencentes ao Login/Footer";
 import Header from "../../components/Componentes pertencentes ao Login/Header";
 import axios from "axios";
@@ -10,20 +11,25 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
   
   function registerSubmit () {
-    axios.post('https://back-end-production-5622.up.railway.app/user/v1', {
+    axios.post('https://back-end-production-5622.up.railway.app/user', {
      "email": `${email}`,
      "password": `${password}`,
      "passwordConfirmation": `${confirmPassword}`,
     })
 
-    .then(function (response) {
-     console.log(response);
+    .then((res) => {
+      console.log('Response:', res);
+     if (res.status === 200) {
+      navigate('/authToken');
+     }
     })
 
     .catch(function (error) {
      console.log(error);
+     navigate('/authToken');
     });
   }
 

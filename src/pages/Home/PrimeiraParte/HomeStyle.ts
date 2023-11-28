@@ -15,7 +15,6 @@ export const PaiContainer = styled.div`
 `
 
 export const Container = styled.div`
- margin: 0 auto;
  margin-top: 1rem;
 `
 
