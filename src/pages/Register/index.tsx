@@ -21,10 +21,7 @@ export default function Register() {
     })
 
     .then((res) => {
-      console.log('Response:', res);
-     if (res.status === 200) {
       navigate('/authToken');
-     }
     })
 
     .catch(function (error) {
