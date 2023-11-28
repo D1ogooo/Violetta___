@@ -6,7 +6,16 @@ import * as S from "./styled";
 export default function FormLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+<<<<<<< HEAD
   const navigate = useNavigate()
+=======
+  
+  function LoginSubmit () {
+    axios.post('', {
+     "email": `${email}`,
+     "password": `${password}`,
+    })
+>>>>>>> 6c585d6ea6743f2caeb2769fbe8c97e5f5174522
 
   async function LoginSubmit () {
    axios.post('https://back-end-production-5622.up.railway.app/user/auth', {
