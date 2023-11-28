@@ -52,6 +52,7 @@ function MeusLikes() {
         </UsuarioPerfil>
       </Header>
 
+      <Container>
       <main>
         <PaiContainer>
           <LeftContainer>
