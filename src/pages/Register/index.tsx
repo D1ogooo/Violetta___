@@ -22,7 +22,7 @@ export default function Register() {
 
     .then((res) => {
       res.data.status === 200 && navigate('/authToken') :  
-    })
+    });
 
     .catch(function (error) {
      console.log(error);
