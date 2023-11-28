@@ -1,4 +1,3 @@
-import React from "react";
 import { Parag } from "./styled";
 import { Rodape } from "./styled";
 
