@@ -2,7 +2,6 @@ import Footer from '../../../components/Componentes pertencentes ao Login/Footer
 import { ButtonComecar } from '../PrimeiraParte/HomeStyle'
 import { PrimeiraColuna, SegundaColuna, PrimeiroCoracao, SegundoCoracao } from './HomeStyle'
 import { LeftContainer, RightContainer, PaiContainer, Title } from './HomeStyle'
-import { Container } from './HomeStyle'
 import CoracaoImage from '../SegundaParte/assets/heart-svgrepo-com 1.svg'
 import SegundoCoracaoImage from '../SegundaParte/assets/heart-svgrepo-com 2.svg'
 import FirstImage from '../../../assets/Images/DreamShaper_v7_ANIME_STYLE_friends_on_a_park_playing_around_wi_1.jpg'
