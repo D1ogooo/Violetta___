@@ -9,13 +9,13 @@ export default function FormLogin() {
   const navigate = useNavigate()
   
   async function LoginSubmit () {
-   const promisse = await axios.post('(link)/user/auth', {
+   const promisse = await axios.post('https://back-end-production-5622.up.railway.app/user/auth', {
     "email": `${email}`,
     "password": `${password}`,
    })
 
-   .then((res) => {
-    navigate('/dashboard')
+   .then((res) => 
+     navigate('/dashboard')
    })
 
    .catch(function (error) {
