@@ -4,8 +4,6 @@ import { PrimeiraColuna, SegundaColuna, PrimeiroCoracao, SegundoCoracao } from '
 import { LeftContainer, RightContainer, PaiContainer, Title } from './HomeStyle'
 import CoracaoImage from '../SegundaParte/assets/heart-svgrepo-com 1.svg'
 import SegundoCoracaoImage from '../SegundaParte/assets/heart-svgrepo-com 2.svg'
-import FirstImage from '../../../assets/Images/DreamShaper_v7_ANIME_STYLE_friends_on_a_park_playing_around_wi_1.jpg'
-import SecondImage from '../../../assets/Images/DreamShaper_v7_ANIME_STYLE_friends_on_a_park_playing_around_wi_0.jpg'
 
 function HomeTerceira() {
     return (
