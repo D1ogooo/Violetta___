@@ -82,7 +82,7 @@ function MeusLikes() {
                         <TitleCard>{card.title}</TitleCard>
                         <ParagraphCard>{card.paragraph}</ParagraphCard>
                         <img src={card.icon_like} alt="Ícone de curtida" />
-                        {/* Se ButtonLike deve ser utilizado, adicione-o aqui */}
+                        
                       </InternalCard>
                     </CardContent>
                   </FullContent>
