@@ -14,10 +14,10 @@ export default function FormLogin() {
     "password": `${password}`,
    })
 
-   .then((res) => 
+   .then((res) => {
      navigate('/dashboard')
    })
-
+     
    .catch(function (error) {
     console.log(error);
    });
