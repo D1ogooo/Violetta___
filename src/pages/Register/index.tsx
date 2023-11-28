@@ -13,20 +13,19 @@ export default function Register() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const navigate = useNavigate();
   
-  function registerSubmit () {
-    axios.post('(link)/user', {
+   function registerSubmit () {
+    axios.post('https://back-end-production-5622.up.railway.app/user', {
      "email": `${email}`,
      "password": `${password}`,
      "passwordConfirmation": `${confirmPassword}`,
     })
 
     .then((res) => {
-      navigate('/authToken');
+      navigate('/authToken')
     })
 
     .catch(function (error) {
      console.log(error);
-     navigate('/authToken');
     });
   }
 
