@@ -8,5 +8,5 @@ nesse projeto fiquei com a parte Frontend
 - Typescript
 - Styled components
 
-Para ficar uma coisa mais otimizado usamos os React router dom,
+Para ficar algo mas otimizado usamos os React react router dom,
 ficou bem melhor para conectar cada pagina com Rotas
