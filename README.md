@@ -9,6 +9,7 @@ o usuário poderá desabar, podera falar sobre assuntos variados e que não pode
 - React
 - Typescript
 - Styled components
+- Radiux UI
 
 Para ficar algo mas otimizado usamos os React react router dom,
 ficou bem melhor para conectar cada pagina com Rotas
