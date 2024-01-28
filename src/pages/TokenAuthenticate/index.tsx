@@ -18,7 +18,7 @@ function TokenAuthenticate() {
   
     try {
       let token = inputValue;
-      await axios.post(`https://back-end-production-5622.up.railway.app/user/active/${token}`);
+      await axios.);
       navigate('/dashboard');
     } catch (error) {
       console.log(error);
