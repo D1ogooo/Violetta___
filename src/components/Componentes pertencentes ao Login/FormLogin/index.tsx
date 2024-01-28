@@ -10,7 +10,7 @@ export default function FormLogin() {
 
   async function LoginSubmit() {
     try {
-      const response = await axios.post('https://back-end-production-5622.up.railway.app/user/auth', {
+      const response = awai, {
         email,
         password,
       });
