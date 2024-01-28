@@ -14,7 +14,7 @@ export default function Register() {
   const navigate = useNavigate();
   
   function registerSubmit() {
-    axios.post('https://back-end-production-5622.up.railway.app/user', {
+', {
       "email": `${email}`,
       "password": `${password}`,
       "passwordConfirmation": `${confirmPassword}`,
